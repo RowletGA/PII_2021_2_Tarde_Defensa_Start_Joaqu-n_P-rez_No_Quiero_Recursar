@@ -18,7 +18,7 @@ namespace Ucu.Poo.Defense
         /// <param name="obj">El objeto a comparar.</param>
         /// <returns><c>True</c> si este objeto es igual al que se recibe como parámetro; <c>False</c> en caso
         /// contrario.</returns>
-        public bool Equals(object obj)
+        public override bool Equals(object obj) //lo que me quemé pensando en un verificador y me acordé de esto para varios tipos
         {
             // Si el otro objeto es null no puede ser igual a este objeto que no es null; retornar False
             if (obj == null)
